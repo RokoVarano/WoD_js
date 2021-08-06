@@ -22,19 +22,19 @@ class Character {
 
     this.attributes = {
       physical: {
-        strength: 0,
-        dexterity: 0,
-        stamina: 0,
+        strength: 1,
+        dexterity: 1,
+        stamina: 1,
       },
       social: {
-        charisma: 0,
-        manipulation: 0,
-        appearence: 0,
+        charisma: 1,
+        manipulation: 1,
+        appearence: 1,
       },
       wits: {
-        perception: 0,
-        intelligence: 0,
-        wits: 0,
+        perception: 1,
+        intelligence: 1,
+        wits: 1,
       }
     }
 
@@ -90,7 +90,7 @@ class Character {
     }
 
     this.soul = {
-      humanity: 0,
+      humanity: 7,
       willpower: {permanent: 0, temporal: 0},
     }
 
@@ -103,7 +103,7 @@ class Character {
 
     this.allies = {} //id, {character, type = 0 (ally, contact, mentor, subordinate, enemy)}
 
-    this.items = {} //id, {name: string, description: string, value: number, hidediff: number, weight: number, attacks: attack, ranged: boolean}
+    this.items = {} //id, item
 
     this.attacks = {
       disarm: new Attack(
