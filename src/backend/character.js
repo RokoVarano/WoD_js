@@ -11,9 +11,9 @@ class Character {
       wealth: 0, //general wealth
       cash: 0, //money on self
       age: 0,
-      nature: {}, // {name, description, system, setChances(), source}
-      demeanor: {}, // {name, description, system, setChances(), source}
-      proffesion: [], // {name, setChances()}
+      nature: {}, // {name, description, system, source}
+      demeanor: {}, // {name, description, system, source}
+      proffesion: [], // {name}
       concept: '',
       experience: 0,
       freebies: 0,
