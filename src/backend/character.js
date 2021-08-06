@@ -8,7 +8,7 @@ class Character {
       story: '',
       sex: 0, // 0: male, 1: female, 2: other
       sexOrientation: 0, // 0: straight, 1: gay, 2: bi, 3: other
-      wealth: 0, //general wealth
+      bank: 0, //bank-account
       cash: 0, //money on self
       age: 0,
       nature: {},
@@ -171,7 +171,7 @@ class Character {
       ),
     }
 
-    this.merits = {} //id, {cost: number, description: string, system: string}
+    this.merits = {} //id, merit
   }
 }
 
