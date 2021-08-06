@@ -11,9 +11,9 @@ class Character {
       wealth: 0, //general wealth
       cash: 0, //money on self
       age: 0,
-      nature: {}, // {name, description, system, source}
-      demeanor: {}, // {name, description, system, source}
-      proffesion: [], // {name}
+      nature: {},
+      demeanor: {},
+      proffesion: 0, //get from proffesion list
       concept: '',
       experience: 0,
       freebies: 0,
@@ -101,9 +101,9 @@ class Character {
       aggravated: 0
     }
 
-    this.allies = {} //{id, character, type = 0 (ally, contact, mentor, subordinate, enemy)}
+    this.allies = {} //id, {character, type = 0 (ally, contact, mentor, subordinate, enemy)}
 
-    this.items = {} //{id, {name: string, description: string, value: number, hidediff: number, weight: number, attacks: attack, ranged: boolean}}
+    this.items = {} //id, {name: string, description: string, value: number, hidediff: number, weight: number, attacks: attack, ranged: boolean}
 
     this.attacks = {
       disarm: new Attack(
@@ -171,7 +171,7 @@ class Character {
       ),
     }
 
-    this.merits = [] //{id, {cost: number, description: string, system: string}}
+    this.merits = {} //id, {cost: number, description: string, system: string}
   }
 }
 
