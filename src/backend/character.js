@@ -6,17 +6,17 @@ class Character {
       story: '',
       sex: 0, // 0: male, 1: female, 2: other
       sexOrientation: 0, // 0: straight, 1: gay, 2: bi, 3: other
-      bank: 0, //bank-account
-      cash: 0, //money on self
+      bank: 0, // bank-account
+      cash: 0, // money on self
       age: 0,
       nature: {},
       demeanor: {},
-      proffesion: 0, //get from proffesion list
+      proffesion: 0, // get from proffesion list
       concept: '',
       experience: 0,
       freebies: 0,
-      supernatural: 0 // 0:normal, 1:ghoul, 2:kinfolk, 3:enchanted
-    }
+      supernatural: 0, // 0:normal, 1:ghoul, 2:kinfolk, 3:enchanted
+    };
 
     this.attributes = {
       physical: {
@@ -33,8 +33,8 @@ class Character {
         perception: 1,
         intelligence: 1,
         wits: 1,
-      }
-    }
+      },
+    };
 
     this.abilities = {
       talents: {
@@ -72,8 +72,8 @@ class Character {
         politics: 0,
         science: 0,
         technology: 0,
-      }
-    }
+      },
+    };
 
     this.backgrounds = {
       allies: 0,
@@ -85,27 +85,27 @@ class Character {
       resources: 0,
       retainers: 0,
       rituals: 0,
-    }
+    };
 
     this.soul = {
       humanity: 7,
-      willpower: {permanent: 0, temporal: 0},
-    }
+      willpower: { permanent: 0, temporal: 0 },
+    };
 
-    this.health= {
+    this.health = {
       totalhealth: 7,
       bashing: 0,
       lethal: 0,
-      aggravated: 0
-    }
+      aggravated: 0,
+    };
 
-    this.allies = {} //id, {character, type = 0 (ally, contact, mentor, subordinate, enemy)}
+    this.allies = {}; // id, {character, type = 0 (ally, contact, mentor, subordinate, enemy)}
 
-    this.items = {} //id, item
+    this.items = {}; // id, item
 
-    this.attacks = {}
+    this.attacks = {};
 
-    this.merits = {} //id, merit
+    this.merits = {}; // id, merit
   }
 }
 

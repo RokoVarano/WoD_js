@@ -5,7 +5,7 @@ class Item {
     value,
     hidediff,
     weight,
-    attacks, //array
+    attacks, // array
     ranged,
   ) {
     this.name = name;
